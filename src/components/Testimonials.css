@@ -1,0 +1,362 @@
+/* Feedback Page Specific Styles */
+
+/* Page Container */
+#feedback-page.page-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+/* Page Header */
+#feedback-page .page-header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    border-radius: 12px;
+    color: white;
+}
+
+#feedback-page .page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+#feedback-page .page-header .subtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Feedback Container */
+#feedback-page .feedback-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+#feedback-page .feedback-container .card {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f0f0f0;
+}
+
+#feedback-page .card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Rating Section */
+#feedback-page .rating-section {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+#feedback-page .rating-section p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+#feedback-page .stars {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+#feedback-page .star-btn {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: #e0e0e0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+    line-height: 1;
+    display: inline-block;
+}
+
+#feedback-page .star-btn:hover {
+    transform: scale(1.2);
+    color: #ffd700;
+}
+
+#feedback-page .star-btn.active {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+#feedback-page .rating-text {
+    color: #666;
+    font-size: 1rem;
+    font-weight: 500;
+    min-height: 24px;
+}
+
+/* Form Styles */
+#feedback-page .form-group {
+    margin-bottom: 25px;
+}
+
+#feedback-page .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#feedback-page .form-group textarea,
+#feedback-page .form-group select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    background-color: white;
+}
+
+#feedback-page .form-group textarea:focus,
+#feedback-page .form-group select:focus {
+    outline: none;
+    border-color: #43e97b;
+    box-shadow: 0 0 0 3px rgba(67, 233, 123, 0.1);
+}
+
+#feedback-page .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#feedback-page .form-group select {
+    cursor: pointer;
+}
+
+/* Checkbox Group */
+#feedback-page .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+#feedback-page .checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #43e97b;
+}
+
+#feedback-page .checkbox-group label {
+    margin: 0;
+    color: #555;
+    cursor: pointer;
+    font-size: 0.95rem;
+    user-select: none;
+}
+
+/* Submit Button */
+#feedback-page .submit-btn {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+#feedback-page .submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(67, 233, 123, 0.3);
+    opacity: 0.95;
+}
+
+/* Feedback Info */
+#feedback-page .feedback-info {
+    flex: 1;
+    min-width: 250px;
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    color: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#feedback-page .feedback-info h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#feedback-page .feedback-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #feedback-page .page-header {
+        padding: 30px 15px;
+        margin-bottom: 40px;
+    }
+    
+    #feedback-page .page-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    #feedback-page .page-header .subtitle {
+        font-size: 1.1rem;
+        padding: 0 10px;
+    }
+    
+    #feedback-page .feedback-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    #feedback-page .feedback-container .card {
+        padding: 30px 20px;
+        min-width: auto;
+    }
+    
+    #feedback-page .card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+    
+    #feedback-page .stars {
+        gap: 10px;
+    }
+    
+    #feedback-page .star-btn {
+        font-size: 2rem;
+    }
+    
+    #feedback-page .feedback-info {
+        padding: 30px 20px;
+        min-width: auto;
+    }
+    
+    #feedback-page .feedback-info h4 {
+        font-size: 1.3rem;
+    }
+    
+    #feedback-page .feedback-info p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #feedback-page .page-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    #feedback-page .page-header .subtitle {
+        font-size: 1rem;
+    }
+    
+    #feedback-page .feedback-container .card {
+        padding: 25px 15px;
+    }
+    
+    #feedback-page .card h3 {
+        font-size: 1.3rem;
+    }
+    
+    #feedback-page .form-group textarea,
+    #feedback-page .form-group select {
+        padding: 12px 14px;
+        font-size: 0.95rem;
+    }
+    
+    #feedback-page .stars {
+        gap: 8px;
+    }
+    
+    #feedback-page .star-btn {
+        font-size: 1.8rem;
+    }
+    
+    #feedback-page .submit-btn {
+        padding: 14px;
+        font-size: 1rem;
+    }
+    
+    #feedback-page .checkbox-group label {
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablet Landscape */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #feedback-page .feedback-container {
+        flex-direction: column;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    #feedback-page .feedback-info {
+        order: -1;
+        padding: 30px;
+    }
+}
+
+/* Large Desktop */
+@media (min-width: 1440px) {
+    #feedback-page .page-container {
+        max-width: 1200px;
+        padding: 40px;
+    }
+    
+    #feedback-page .page-header h1 {
+        font-size: 3.5rem;
+    }
+    
+    #feedback-page .page-header .subtitle {
+        font-size: 1.5rem;
+    }
+    
+    #feedback-page .feedback-container {
+        gap: 50px;
+    }
+    
+    #feedback-page .card h3 {
+        font-size: 2rem;
+    }
+    
+    #feedback-page .star-btn {
+        font-size: 3rem;
+    }
+    
+    #feedback-page .feedback-info h4 {
+        font-size: 1.8rem;
+    }
+    
+    #feedback-page .feedback-info p {
+        font-size: 1.2rem;
+    }
+}
