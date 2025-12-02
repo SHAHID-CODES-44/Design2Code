@@ -366,11 +366,11 @@ const Header = () => (
     <div className="landing-header landing-container">
 <img src={Logo} alt="Logo" />
          <div className="landing-nav">
-            <a href="/https://linkedin.com"></a><p>Follow Us</p>
-            <a href="/Contact"></a><p>Contact</p>
-            <a href="/Auth"></a><p>Login</p>
-            <a href="/Auth"></a><p>Signup</p>
-            <a href="/Categories"></a><p>Explore More</p>
+            <a href="/https://linkedin.com"><p>Follow Us</p></a>
+            <a href="/Contact"><p>Contact</p></a>
+            <a href="/Auth"><p>Login</p></a>
+            <a href="/Auth"><p>Signup</p></a>
+            <a href="/Categories"><p>Explore More</p></a>
         </div>
         <a href="/Auth"><button className="landing-button">Get in</button></a>
     </div>
