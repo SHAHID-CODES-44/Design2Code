@@ -9,7 +9,9 @@ import Feedback from "./components/FeedbackForm";
 import Testimonials from "./components/Testimonials";
 import Auth from "./components/Auth";
 import Home from "./components/Home-Page"
-
+import Categories from "./components/Categories";
+import Template01 from "./components/Template-1";
+import Template02 from "./components/Template-2"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,6 +27,9 @@ function App() {
         <Route path='/Testimonials' element={<Testimonials />} />
         <Route path='/Auth' element={<Auth />} />
         <Route path='/Home' element={<Home />} />
+        <Route path='/Categories' element={<Categories />} />
+        <Route path='/Template1' element={<Template01 />} />
+        <Route path='/Template02' element={<Template02/>} />
       </Routes>
     </>
   )

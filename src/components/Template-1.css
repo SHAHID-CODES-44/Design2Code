@@ -1,0 +1,304 @@
+/* --- CSS Variables based on Category.css Aesthetic --- */
+:root {
+    --color-white: #FFFFFF;
+    --color-light-grey: #F5F5F5;
+    --color-medium-grey: #E5E5E5;
+    --color-dark-grey: #555555;
+    --color-accent: #C7A17A; /* Soft Brown/Coffee */
+    --color-text-title: #333333;
+    --color-text-subtitle: #777777;
+    --color-border: #E5E5E5;
+    --border-radius-smooth: 12px;
+    --box-shadow-subtle: 0 4px 12px rgba(0, 0, 0, 0.04);
+    --box-shadow-strong: 0 8px 20px rgba(0, 0, 0, 0.08);
+    --max-content-width: 1200px;
+}
+
+body {
+    background-color: var(--color-light-grey);
+    font-family: 'Inter', sans-serif;
+    color: var(--color-dark-grey);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* --- Root Container --- */
+.templates-01-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- Navbar Styling --- */
+.templates-01-navbar {
+    background-color: var(--color-white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.templates-01-navbar-inner {
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.templates-01-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.templates-01-brand:hover {
+    color: var(--color-text-title);
+}
+
+.templates-01-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.templates-01-nav-link {
+    text-decoration: none;
+    color: var(--color-dark-grey);
+    font-weight: 500;
+    padding: 0.5rem 0;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+.templates-01-nav-link:hover {
+    color: var(--color-accent);
+    border-bottom: 2px solid var(--color-accent);
+}
+
+/* --- Main Content Layout --- */
+.templates-01-main {
+    max-width: var(--max-content-width);
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+    flex-grow: 1;
+}
+
+/* --- Template List Grid --- */
+.templates-01-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    padding-bottom: 4rem;
+}
+
+/* --- Card Styling --- */
+.templates-01-card {
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-smooth);
+    padding: 2rem;
+    box-shadow: var(--box-shadow-subtle);
+    border: 1px solid var(--color-border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.templates-01-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow-strong);
+    border-color: var(--color-accent);
+}
+
+.templates-01-card-header {
+    margin-bottom: 1.5rem;
+}
+
+.templates-01-card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-text-title);
+    margin: 0 0 0.5rem 0;
+}
+
+.templates-01-card-meta {
+    font-size: 0.85rem;
+    color: var(--color-text-subtitle);
+    display: flex;
+    gap: 1rem;
+}
+
+/* --- Tags --- */
+.templates-01-card-tags {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.templates-01-card-tag {
+    background-color: var(--color-light-grey);
+    color: var(--color-dark-grey);
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border: 1px solid var(--color-border);
+}
+
+/* --- Recommended Section --- */
+.templates-01-card-recommended {
+    padding-top: 1rem;
+    border-top: 1px dashed var(--color-medium-grey);
+}
+
+.templates-01-card-rec-title {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--color-text-title);
+    margin-bottom: 0.5rem;
+}
+
+.templates-01-card-rec-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.templates-01-card-rec-item {
+    padding-left: 1.25rem;
+    position: relative;
+    color: var(--color-dark-grey);
+}
+
+.templates-01-card-rec-item::before {
+    content: "•";
+    color: var(--color-accent);
+    position: absolute;
+    left: 0;
+}
+
+/* --- Footer and Buttons --- */
+.templates-01-card-footer {
+    display: flex;
+    gap: 0.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-light-grey);
+    margin-top: auto;
+}
+
+.templates-01-card-link,
+.templates-01-card-copy-btn {
+    flex-grow: 1;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    font-size: 0.95rem;
+    border: 1px solid transparent;
+}
+
+/* Primary Button (Link) */
+.templates-01-card-link {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    border-color: var(--color-accent);
+}
+
+.templates-01-card-link:hover {
+    background-color: #A9835A;
+    box-shadow: 0 4px 10px rgba(199, 161, 122, 0.3);
+}
+
+/* Secondary Button (Copy) */
+.templates-01-card-copy-btn {
+    background-color: var(--color-white);
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.templates-01-card-copy-btn:hover {
+    background-color: #FFF8F0;
+    color: #A9835A;
+}
+
+/* Copy Feedback */
+.templates-01-card-copy-btn[data-copied="true"] {
+    background-color: #B8E8B8; /* Light Green */
+    border-color: #4CAF50;
+    color: #4CAF50;
+    pointer-events: none;
+    content: 'Copied!';
+}
+
+/* --- About Section --- */
+.templates-01-about {
+    background-color: var(--color-white);
+    padding: 2.5rem;
+    border-radius: var(--border-radius-smooth);
+    box-shadow: var(--box-shadow-subtle);
+    border-left: 5px solid var(--color-accent);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.templates-01-about-title {
+    font-size: 1.25rem;
+    color: var(--color-text-title);
+    margin-top: 0;
+}
+
+/* --- Contact/Footer Section --- */
+.templates-01-contact {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid var(--color-medium-grey);
+    margin-top: 2rem;
+}
+
+.templates-01-contact-title {
+    font-size: 1rem;
+    color: var(--color-text-title);
+    margin-bottom: 0.5rem;
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 768px) {
+    .templates-01-navbar-inner {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .templates-01-nav-list {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .templates-01-main {
+        padding: 0 1rem;
+        margin: 1.5rem auto;
+    }
+
+    .templates-01-list {
+        gap: 1.5rem;
+    }
+
+    .templates-01-card {
+        padding: 1.5rem;
+    }
+    
+    .templates-01-card-footer {
+        flex-direction: column;
+    }
+}
